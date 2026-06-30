@@ -39,4 +39,3 @@ console.log(student1.name);
 
 student1.studentNumber = 567;
 console.log(student1.studentNumber);
-

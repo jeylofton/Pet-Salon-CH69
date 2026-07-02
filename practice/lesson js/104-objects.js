@@ -53,6 +53,7 @@ let person2 ={
     age: 63
 };
 
+// Constructor
 function Person(valueName, valueLastName, valueAge){
     this.name=valueName;
     this.lastName=valueLastName;

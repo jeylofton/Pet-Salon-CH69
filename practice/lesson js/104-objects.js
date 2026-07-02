@@ -39,3 +39,25 @@ console.log(student1.name);
 
 student1.studentNumber = 567;
 console.log(student1.studentNumber);
+
+// === Object Constructor === //
+let person1 = {
+    name: "Jey",
+    lastName: "Lofton",
+    age:44
+};
+
+let person2 ={
+    name:"Thomas",
+    lastName: "Johnson",
+    age: 63
+};
+
+function Person(valueName, valueLastName, valueAge){
+    this.name=valueName;
+    this.lastName=valueLastName;
+    this.age=valueAge;
+};
+
+// Creating an Object
+let person3 = new Person("Jey", "Lofton", 44);

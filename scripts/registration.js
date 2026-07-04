@@ -32,3 +32,34 @@ function registeredPets() {
 }
 
 registeredPets();
+
+function Pet(valueName, valueAge, valueBreed, valueGender, valueService){
+    this.petName2=valueName;
+    this.petAge=valueAge;
+    this.petBreed=valueBreed;
+    this.petGender=valueGender;
+    this.petService=valueService;
+};
+
+function registerPet(event){
+    // Testing Function and Button Connection
+    // console.log("Connected");
+
+    // Prevent refreshing the browser
+    event.preventDefault();
+    // console.log(event);
+
+    // 1. Get the Value
+    let petName2 = document.getElementById("petName2").value;
+    let petAge = document.getElementById("petAge").value;
+    let petBreed = document.getElementById("petBreed").value;
+    let petGender = document.getElementById("petGender").value;
+    let petService = document.getElementById("petService").value;
+
+    // 2. Use the Values
+    // 2.1 Create the Object
+    let newPet = new Pet(petName2, petAge, petBreed, petGender, petService);
+    console.log(newPet);
+
+    displayCard(newPet);
+};

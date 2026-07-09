@@ -12,7 +12,7 @@
     <body class="m-5">
         <section>
             <h1>Student Registration</h1>
-            <form class="p-3 border m-5 rounded bg-light">
+            <form id="studentForm" class="p-3 border m-5 rounded bg-light">
                 <div class="mb-3">
                     <label class="form-label">Name</label>
                     <input class="form-control" type="text" placeholder="John Wick" id="studentName">
@@ -34,7 +34,26 @@
                     <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
             </form>
+        </section>
+        <section class="m-5">
+            <h2>Student List</h2>
 
+            <table class="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tbody id="tableList">
+                        <tr>
+                        <td>John</td>
+                        <td>10</td>
+                        <td>Math</td>
+                        <td> <button class="btn btn-danger">Delete</button> </td>
+                        </tr>
+                    </tbody>
+            </table>
         </section>
         
         <script src="/practice/lesson js/104-student.js"></script>

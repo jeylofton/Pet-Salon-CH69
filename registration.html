@@ -27,7 +27,7 @@
         </div>
         <div>
         <h2>Registration</h2>
-        <form class="p-3 border m-5 rounded bg-light">
+        <form id="petForm" class="p-3 border m-5 rounded bg-light">
         <div class="mb-3">
         <label class="form-label">Name</label>
         <input class="form-control" type="text" name="" id="petName2" placeholder="Name">
@@ -65,8 +65,46 @@
         </div>
         </form>
         </div>
-
     </section>
+    <section class="m-5">
+            <h2>Pet List</h2>
+            <table class="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Service</th>
+                        <th>Breed</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tbody id="tableList">
+                        <tr>
+                        <td>Walter</td>
+                        <td>7</td>
+                        <td>Male</td>
+                        <td>Grooming</td>
+                        <td>Mixed</td>
+                        <td> <button class="btn btn-danger">Delete</button> </td>
+                        </tr>
+                        <tr>
+                        <td>Tato</td>
+                        <td>4</td>
+                        <td>Male</td>
+                        <td>Nail Clipping</td>
+                        <td>Mixed</td>
+                        <td> <button class="btn btn-danger">Delete</button> </td>
+                        </tr>
+                        <tr>
+                        <td>Rocky</td>
+                        <td>6</td>
+                        <td>Male</td>
+                        <td>Ear Cleaning</td>
+                        <td>Mixed</td>
+                        <td> <button class="btn btn-danger">Delete</button> </td>
+                        </tr>
+                    </tbody>
+            </table>
+        </section>
         
         <script src="scripts/registration.js" defer></script>
     </body>

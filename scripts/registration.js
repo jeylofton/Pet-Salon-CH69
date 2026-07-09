@@ -62,4 +62,26 @@ function registerPet(event){
     console.log(newPet);
 
     displayCard(newPet);
+
+    document.getElementById("petForm").reset();
 };
+
+function displayCard(newPet){
+    
+const tableList = document.getElementById("tableList");
+
+let row = document.createElement("tr");
+
+row.innerHTML = `
+<td> ${newPet.petName2}</td>
+<td> ${newPet.petAge}</td>
+<td> ${newPet.petGender}</td>
+<td> ${newPet.petService} </td>
+<td> ${newPet.petBreed}</td>
+<td> <button class="btn btn-danger">Delete</button> </td>
+`;
+
+tableList.appendChild(row);
+
+
+}

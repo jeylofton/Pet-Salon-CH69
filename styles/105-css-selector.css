@@ -1,0 +1,28 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* By Html by Element */
+h1{
+    color: red;
+}
+
+.text {
+    font-size: 20px;
+}
+
+#saveButton{
+    background-color: green;
+}
+
+/* jQuery Selectors
+$("h1").hide();
+
+$("p").hide();
+
+$(".text").hide();
+
+$("#saveButton").hide();
+
+*/
+

@@ -30,10 +30,18 @@ row.innerHTML = `
 <td> ${newStudent.name}</td>
 <td> ${newStudent.age}</td>
 <td> ${newStudent.course}</td>
-<td> <button class="btn btn-danger">Delete</button> </td>
+<td> <button class="btn btn-danger delete-btn">Delete</button> </td>
 `;
 
-tableList.appendChild(row);
+row.querySelector(".delete-btn").addEventListener("click", function(){
 
+    const confirmation = confirm("Are you sure you want to delete this row?");
+
+    if (confirmation){
+        row.remove();
+    }
+});
+
+tableList.appendChild(row);
 
 }

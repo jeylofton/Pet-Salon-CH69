@@ -7,11 +7,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Pet Salon</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,15 +27,40 @@
         </li>
         <li class="nav-item">
         <a class="nav-link" href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
     </ul>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+    </button>
     </div>
     </div>
     </nav>
-        </header>
-        <script src="" async defer></script>
+    </header>
+    <main>
+        <div class="p-4">
+            <h1>Services</h1>
+        </div>
+        <section>
+        <form id="petForm" class="p-3 border m-5 rounded bg-light">
+            <div class="mb-3">
+        <label class="form-label">Service</label>
+        <input class="form-control" type="text" name="" id="petService" placeholder="Name">
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Description</label>
+        <input class="form-control" type="text" id="petDescription" placeholder="Includes shampoo & towel dry">
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input class="form-control" type="number" name="" id="petPrice" placeholder="10.00">
+        </div>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+        <button onclick="registerService(event)" type="submit" class="btn btn-primary">Register</button>
+        <button type="reset" class="btn btn-secondary">Cancel</button>
+        </div>
+            </form>
+        </section>
+    </main>
+    <script src="" async defer></script>
     </body>
 </html>

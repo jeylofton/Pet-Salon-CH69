@@ -29,3 +29,7 @@ $("#addCssClassButton").click(function(){
 $("#applyCssClassButton").click(function(){
     $(".apply-btn").css("background-color", "green");
 });
+
+$("#applyCssClassButton").click(function(){
+    $("p").addClass("my-class");
+});

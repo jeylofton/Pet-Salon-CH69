@@ -40,27 +40,28 @@
             <h1>Services</h1>
         </div>
         <section>
-        <form id="petForm" class="p-3 border m-5 rounded bg-light">
+        <form id="servicesForm" class="p-3 border m-5 rounded bg-light">
             <div class="mb-3">
         <label class="form-label">Service</label>
-        <input class="form-control" type="text" name="" id="petService" placeholder="Name">
+        <input class="form-control" type="text" name="" id= "serviceName" placeholder="Name">
         </div>
         <div class="mb-3">
         <label class="form-label">Description</label>
-        <input class="form-control" type="text" id="petDescription" placeholder="Includes shampoo & towel dry">
+        <input class="form-control" type="text" id="serviceDescription" placeholder="Includes shampoo & towel dry">
         </div>
         <div class="mb-3">
         <label class="form-label">Price</label>
-        <input class="form-control" type="number" name="" id="petPrice" placeholder="10.00">
+        <input class="form-control" type="number" name="" id= "servicePrice" placeholder="10.00">
         </div>
         </div>
         <div class="d-grid gap-2 d-md-block">
-        <button onclick="registerService(event)" type="submit" class="btn btn-primary">Register</button>
+        <button type="submit" class="btn btn-primary">Register</button>
         <button type="reset" class="btn btn-secondary">Cancel</button>
         </div>
-            </form>
+        </form>
         </section>
     </main>
-    <script src="" async defer></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="scripts/services.js"></script>
     </body>
 </html>

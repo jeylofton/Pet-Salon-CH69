@@ -6,12 +6,22 @@ let serviceName = $("#serviceName").val().trim();
 let serviceDescription = $("#serviceDescription").val().trim();
 let servicePrice = $("#servicePrice").val().trim();
 
-if (serviceName == "" || serviceDescription == "" || servicePrice == "") {
-    $(serviceName == "" || serviceDescription == "" || servicePrice == "")
-    .css("border", "2px solid red");
+if (serviceName == "") {
+    $("#serviceName").css("border", "2px solid red");
 } else {
-    $(serviceName == "" || serviceDescription == "" || servicePrice == "")
-    .css("border", "");
+    $("#serviceName").css("border", "");
+}
+
+if (serviceDescription == "") {
+    $("#serviceDescription").css("border", "2px solid red");
+} else {
+    $("#serviceDescription").css("border", "");
+}
+
+if (servicePrice == "") {
+    $("#servicePrice").css("border", "2px solid red");
+} else {
+    $("#servicePrice").css("border", "");
 }
 
 });

@@ -1,5 +1,5 @@
 let salon ={
-    name: "Jey's Pet Salon",
+    name: "Balboa Doggie Care Center",
     hours: "24 hours",
     phone: "+50712542584",
     address:{
@@ -11,15 +11,16 @@ let salon ={
 };
 
 function displaySalonInfo() {
-    document.getElementById("aboutUs").innerHTML =
-        "Welcome to " + salon.name +
-        ". We are located at " +
-        salon.address.street + ", " +
-        salon.address.building + "," +
-        salon.address.city + ", " +
-        salon.address.state + " " +
-        ". Our hours are " + salon.hours +
-        ". You can contact us at " + salon.phone + ".";
+    document.getElementById("salonName").innerHTML = salon.name;
+
+    document.getElementById("salonAddress").innerHTML =
+        salon.address.street + "<br>" +
+        salon.address.building + "<br>" +
+        salon.address.city + ", " + salon.address.state;
+
+    document.getElementById("salonHours").innerHTML = salon.hours;
+
+    document.getElementById("salonPhone").innerHTML = salon.phone;
 }
 
 displaySalonInfo();

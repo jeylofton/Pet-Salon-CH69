@@ -15,7 +15,7 @@ function displaySalonInfo() {
         "Welcome to " + salon.name +
         ". We are located at " +
         salon.address.street + ", " +
-        salon.building + "," +
+        salon.address.building + "," +
         salon.address.city + ", " +
         salon.address.state + " " +
         ". Our hours are " + salon.hours +

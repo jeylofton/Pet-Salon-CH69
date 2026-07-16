@@ -14,9 +14,12 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Pet Salon</a>
+    <div class="d-flex align-items-center ms-auto order-lg-last">
+    <button id="changeModeButton" class="btn btn-dark btn-sm me-2">🌙 Change Mode</button>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
+    </div>
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
         <li class="nav-item">
@@ -37,9 +40,6 @@
         <div class="p-4">
             <h1>Services</h1>
         </div>
-        <div class="m-5 d-flex justify-content-end">
-            <button id="changeModeButton" class="btn btn-dark">🌙 Change Mode</button>
-        </div>
         <section>
         <form id="servicesForm" class="p-3 border m-5 rounded">
             <div class="mb-3">
@@ -56,12 +56,13 @@
         </div>
         </div>
         <div class="d-grid gap-2 d-md-block">
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button id="storeInfo" type="submit" class="btn btn-primary">Register</button>
         <button type="reset" class="btn btn-secondary">Cancel</button>
         </div>
         </form>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script src="scripts/services.js"></script>
     </body>

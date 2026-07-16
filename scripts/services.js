@@ -1,6 +1,6 @@
 $("#servicesForm").on("submit", function(event){
 event.preventDefault();
-   // alert("Form Connnected");
+// alert("Form Connnected");
 
 let serviceName = $("#serviceName").val().trim();
 let serviceDescription = $("#serviceDescription").val().trim();
@@ -24,9 +24,25 @@ if (servicePrice == "") {
     $("#servicePrice").css("border", "");
 }
 
+// only save when every field is filled in
+if (serviceName != "" && serviceDescription != "" && servicePrice != "") {
+
+    let newService = {
+        name: serviceName,
+        description: serviceDescription,
+        price: servicePrice
+    };
+
+    // save to local storage
+    localStorage.setItem("serviceInfo", JSON.stringify(newService));
+
+    alert("Service registered: " + serviceName);
+    this.reset();
+}
+
 });
 
-$("#changeModeButton").click(function(){
+$("#changeModeButton").on("click", function(){
     $("body").toggleClass("dark-mode");
 
     const isDark = $("body").hasClass("dark-mode");
@@ -35,6 +51,5 @@ $("#changeModeButton").click(function(){
         $("#changeModeButton").text("☀️ Change Mode");
     }else{
         $("#changeModeButton").text("🌙 Change Mode");
-    } 
+    }
 });
-

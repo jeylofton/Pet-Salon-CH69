@@ -38,4 +38,3 @@ $("#changeModeButton").click(function(){
     } 
 });
 
-

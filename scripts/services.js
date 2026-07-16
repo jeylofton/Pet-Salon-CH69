@@ -1,6 +1,6 @@
 $("#servicesForm").on("submit", function(event){
 event.preventDefault();
-// alert("Form Connnected");
+   // alert("Form Connnected");
 
 let serviceName = $("#serviceName").val().trim();
 let serviceDescription = $("#serviceDescription").val().trim();
@@ -22,22 +22,6 @@ if (servicePrice == "") {
     $("#servicePrice").css("border", "2px solid red");
 } else {
     $("#servicePrice").css("border", "");
-}
-
-// only save when every field is filled in
-if (serviceName != "" && serviceDescription != "" && servicePrice != "") {
-
-    let newService = {
-        name: serviceName,
-        description: serviceDescription,
-        price: servicePrice
-    };
-
-    // save to local storage
-    localStorage.setItem("serviceInfo", JSON.stringify(newService));
-
-    alert("Service registered: " + serviceName);
-    this.reset();
 }
 
 });

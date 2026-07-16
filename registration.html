@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Pet Salon</title>
+        <title>Balboa Doggie Care Center</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body class="p-4">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Pet Salon</a>
+    <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt="Balboa Doggie Care Center" height="45"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,7 +43,8 @@
         </div>
         <div>
         <h2>Registration</h2>
-        <form id="petForm" class="p-3 border m-5 rounded bg-light">
+        </div>
+        <form id="petForm" class="p-3 border m-5 rounded">
         <div class="mb-3">
         <label class="form-label">Name</label>
         <input class="form-control" type="text" name="" id="petName2" placeholder="Name">
@@ -74,10 +75,10 @@
                 <option value="Walking">Walking</option>
             </select>
         </div>
+            <div class="d-flex justify-content-end gap-3">
+            <button onclick="registerPet(event)" type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
         </div>
-        <div class="d-flex justify-content-end gap-3">
-        <button onclick="registerPet(event)" type="submit" class="btn btn-primary">Submit</button>
-        <button type="reset" class="btn btn-secondary">Reset</button>
         </div>
         </form>
         </div>

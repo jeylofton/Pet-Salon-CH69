@@ -3,7 +3,7 @@ let salon ={
     hours: "24 hours",
     phone: "+50712542584",
     address:{
-        street: "Avenida Balboa y Calle 50 Oeste",
+        street: "Calle 45 este",
         building: "Balboa Tower Piso PB",
         city: "Panamá City",
         state: "Panamà"

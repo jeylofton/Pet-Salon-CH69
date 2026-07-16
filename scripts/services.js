@@ -25,3 +25,21 @@ if (servicePrice == "") {
 }
 
 });
+
+// only save when every field is filled in
+if (serviceName != "" && serviceDescription != "" && servicePrice != "") {
+
+    let newService = {
+        name: serviceName,
+        description: serviceDescription,
+        price: servicePrice
+    };
+
+    // save to local storage
+    localStorage.setItem("serviceInfo", JSON.stringify(newService));
+
+    alert("Service registered: " + serviceName);
+    this.reset();
+}
+
+});

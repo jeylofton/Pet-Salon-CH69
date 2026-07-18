@@ -85,3 +85,14 @@ tableList.appendChild(row);
 
 
 }
+
+// delete a row when its Delete button is clicked
+// this is on the tbody so it works for the rows already in the
+// html and the new rows added by displayCard
+document.getElementById("tableList").addEventListener("click", function(event){
+
+    if (event.target.classList.contains("btn-danger")) {
+        event.target.closest("tr").remove();
+    }
+
+});
